@@ -53,10 +53,12 @@ chmod +x setup.sh
 
 **Option B: Manual installation**
 
-1. Install PyTorch with CUDA support:
+1. Install PyTorch 2.6+ with CUDA support:
 ```bash
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 ```
+
+   **Note**: PyTorch 2.6 or higher is required for PRX model support.
 
 2. Install diffusers from GitHub (required for PRX support):
 ```bash
@@ -173,6 +175,24 @@ demo.launch(
 
 ## 🐛 Troubleshooting
 
+### Error: Using `or_mask_function` or `and_mask_function` arguments require torch>=2.6
+
+This error means you need to upgrade PyTorch to version 2.6 or higher:
+
+```bash
+pip install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+```
+
+For CPU only:
+```bash
+pip install --upgrade torch torchvision torchaudio
+```
+
+After upgrading, verify your PyTorch version:
+```bash
+python -c "import torch; print(torch.__version__)"
+```
+
 ### ModuleNotFoundError: No module named 'diffusers.pipelines.prx'
 
 This means you need the latest development version of diffusers:
@@ -223,11 +243,13 @@ Make sure all dependencies are installed correctly:
 4. Install remaining requirements
 
 ```bash
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 pip install --upgrade git+https://github.com/huggingface/diffusers.git
 pip install --upgrade transformers
 pip install -r requirements.txt
 ```
+
+**Note**: Make sure you have PyTorch 2.6 or higher installed.
 
 ## 📄 License
 
