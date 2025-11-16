@@ -3,7 +3,8 @@
 A beautiful Gradio web interface for Photoroom's **PRX-1024-t2i-beta** text-to-image model.
 
 ![PRX Model](https://img.shields.io/badge/Model-PRX--1024--t2i--beta-blue)
-![License](https://img.shields.io/badge/License-Apache%202.0-green)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Model License](https://img.shields.io/badge/Model%20License-Apache%202.0-orange)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 
 ## 🌟 Features
@@ -26,8 +27,8 @@ A beautiful Gradio web interface for Photoroom's **PRX-1024-t2i-beta** text-to-i
 ### 1. Clone or Download
 
 ```bash
-git clone <your-repo-url>
-cd Photroom-PRX
+git clone https://github.com/PierrunoYT/photoroom-prx-local.git
+cd photoroom-prx-local
 ```
 
 ### 2. Install Dependencies
@@ -230,7 +231,11 @@ pip install -r requirements.txt
 
 ## 📄 License
 
-This project is released under the Apache 2.0 license, matching the PRX model license.
+This project (the web interface and application code) is released under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+**Important**: The PRX-1024-t2i-beta model itself is licensed under **Apache 2.0** by Photoroom. When using this application, you are subject to both:
+- The MIT License for this application code
+- The Apache 2.0 License for the PRX model
 
 ### Use Restrictions
 
@@ -238,6 +243,8 @@ You must not use this application or PRX models for:
 
 1. Any of the restricted uses set forth in the Gemma Prohibited Use Policy
 2. Any activity that violates applicable laws or regulations
+
+For full model license details, see the [PRX Model Card](https://huggingface.co/Photoroom/prx-1024-t2i-beta)
 
 ## 🙏 Credits
 

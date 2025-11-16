@@ -4,9 +4,6 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
-venv/
-ENV/
 build/
 develop-eggs/
 dist/
@@ -19,14 +16,36 @@ parts/
 sdist/
 var/
 wheels/
+pip-wheel-metadata/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
 # Virtual environments
 venv/
 ENV/
 env/
+.venv/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
 
 # IDEs
 .vscode/
@@ -34,24 +53,77 @@ env/
 *.swp
 *.swo
 *~
+.spyderproject
+.spyproject
+.ropeproject
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+Desktop.ini
 
 # Gradio
 gradio_cached_examples/
 flagged/
+tmp/
 
-# Model cache
+# Hugging Face / Model cache
 .cache/
 huggingface/
+models/
+checkpoints/
+*.safetensors
+*.bin
+*.ckpt
+*.pth
+*.pt
 
 # Logs
 *.log
+logs/
+*.log.*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
 
 # Generated images (optional - uncomment if you want to ignore output images)
+# output/
+# generated/
 # *.png
 # *.jpg
 # *.jpeg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# profiling data
+.prof
 
