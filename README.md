@@ -79,6 +79,7 @@ pip install -r requirements.txt
 - PRX requires the latest development version of diffusers from GitHub
 - The first run will download the model weights (~5GB) from Hugging Face
 - A CUDA-compatible GPU is highly recommended for reasonable generation times
+- The app includes a temporary monkey patch for 1024x1024 resolution bins (will be removed once official bins are added to diffusers)
 
 ### 3. Run the Application
 
@@ -273,6 +274,7 @@ For full model license details, see the [PRX Model Card](https://huggingface.co/
 - **Model**: [Photoroom](https://www.photoroom.com/) - PRX-1024-t2i-beta
 - **Framework**: [Gradio](https://gradio.app/) for the web interface
 - **Diffusion Library**: [Hugging Face Diffusers](https://github.com/huggingface/diffusers)
+- **Resolution bins fix**: Thanks to the Photoroom team for the [temporary workaround](https://huggingface.co/spaces/Photoroom/PRX-1024-beta-version/blob/main/app.py#L40)
 
 ## 🤝 Contributing
 
