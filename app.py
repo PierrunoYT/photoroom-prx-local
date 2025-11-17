@@ -164,8 +164,6 @@ with gr.Blocks(title="PRX-1024 Text-to-Image Generator", theme=gr.themes.Soft())
 # Launch the app
 if __name__ == "__main__":
     demo.launch(
-        server_name="127.0.0.1",
-        server_port=7860,
         share=False,
         show_error=True
     )
