@@ -16,4 +16,5 @@ accelerate
 safetensors
 Pillow
 sentencepiece
+ftfy
 
